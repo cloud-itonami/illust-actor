@@ -1,0 +1,1 @@
+5d3ab542-2fc4-4c12-b537-c020645e27a2 bucket=gftdcojp-m365-annex chunk=50MiB datacenter=US encryption=none fileprefix=gftd-illust-actor/ host=s3.us-west-004.backblazeb2.com name=b2 port=443 protocol=https signature=v4 storageclass=STANDARD type=S3 timestamp=1783853984s
