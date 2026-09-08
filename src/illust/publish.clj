@@ -12,13 +12,13 @@
 
 (defn load-or-create-identity! [] (cacao/load-or-create-identity! identity-path))
 
-(def display-name "gftd-illust-actor — アカリ")
+(def display-name "illust-actor — アカリ")
 
 (def description
   (str "🎨 AI-GENERATED illustrations for network-isekai, produced by a "
        "co-scientist-style generation loop over the murakumo fleet, gated by "
        "an independent AssetGovernor before anything is published. Every "
-       "asset here is free (:cc0/:cc-by) — github.com/gftdcojp/gftd-illust-actor"))
+       "asset here is free (:cc0/:cc-by) — github.com/cloud-itonami/illust-actor"))
 
 (defn json-opts []
   {:json-write json/generate-string
