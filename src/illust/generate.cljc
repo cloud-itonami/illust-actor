@@ -8,7 +8,7 @@
   same round number reproduces the same candidates; exploration across the
   pool happens by round number advancing (illust.loop) and by biasing one
   gene slot toward the previous round's elite (illust.cosci/evolve-round)."
-  (:require [clojure.string :as str]))
+  (:require [kotoba.lang.text :as str]))
 
 (def gene-pool
   {:subject ["a lone traveler at a rural train crossing"
