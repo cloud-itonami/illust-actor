@@ -18,7 +18,7 @@
   )
 
 (def modality :image)
-(def actor-id "gftd-illust-actor")
+(def actor-id "illust-actor")
 
 (defn function
   "This actor's murakumo.edn `:apps :generation` function entry (SSoT stays

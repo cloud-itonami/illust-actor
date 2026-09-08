@@ -28,12 +28,12 @@
    :asset/kind kind
    :asset/format format
    :asset/title title
-   :asset/author "gftd-illust-actor"
+   :asset/author "illust-actor"
    :asset/license license
    :asset/tags (vec tags)
    :asset/source :gen
    :asset/gen {:stage :diffusion :job-key gen-job-id :prompt prompt
-               :provenance "murakumo/comfy via gftd-illust-actor co-scientist loop"}
+               :provenance "murakumo/comfy via illust-actor co-scientist loop"}
    :asset/created created})
 
 (defn write-asset!
