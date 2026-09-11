@@ -1,0 +1,23 @@
+{:format :kotoba.cljk-origin/v1
+ :renamed-on "2026-09-11"
+ :decision "adr-2609111500-cljk-rename-all-clojure-source (com-junkawasaki/root 90-docs/adr; owner instruction 2026-09-11)"
+ :rule "value = the extension the file had before the rename. A path ending in .clj.cljk or .cljs.cljk kept it in the name because both platform files existed (or the plain target was taken)."
+ :origins
+ {"src/illust/aozora.cljk" ".clj"
+  "src/illust/cacao.cljk" ".clj"
+  "src/illust/cosci.cljk" ".cljc"
+  "src/illust/datalad.cljk" ".clj"
+  "src/illust/generate.cljk" ".cljc"
+  "src/illust/governor.cljk" ".cljc"
+  "src/illust/judge.cljk" ".clj"
+  "src/illust/ledger.cljk" ".clj"
+  "src/illust/loop.cljk" ".clj"
+  "src/illust/main.cljk" ".clj"
+  "src/illust/murakumo.cljk" ".clj"
+  "src/illust/persona.cljk" ".clj"
+  "src/illust/publish.cljk" ".clj"
+  "src/illust/publisher.cljk" ".cljc"
+  "test/illust/cosci_test.cljk" ".clj"
+  "test/illust/generate_test.cljk" ".cljc"
+  "test/illust/governor_test.cljk" ".clj"
+  "test/illust/loop_test.cljk" ".clj"}}
