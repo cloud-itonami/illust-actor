@@ -77,7 +77,7 @@ datalad push --to b2           # push new bytes after a local save
 clojure -M:run tick     # one durable-loop step (cron/launchd)
 clojure -M:run run      # stay resident, tick on an interval
 clojure -M:run status   # print ledger tail + loop state
-clojure -M:test         # offline, fully faked (no network) — see test/illust/loop_test.clj
+clojure -M:test         # offline, fully faked (no network) — see test/illust/loop_test.cljk
 clojure -M:lint         # clj-kondo, errors fail
 ```
 
