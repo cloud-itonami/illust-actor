@@ -10,7 +10,7 @@
   HONEST LIMIT: whether jobs this loop submits actually complete depends on a
   murakumo fleet worker being up and consuming the `gftd-murakumo` kotoba
   queue — see illust.murakumo's docstring."
-  (:require [clojure.java.io :as io]
+  (:require [kotoba.io :as io]
             [clojure.edn :as edn]
             [kotoba.lang.text :as str]
             [illust.persona :as persona]
@@ -45,11 +45,11 @@
   []
   (let [f (io/file lease-path)]
     (io/make-parents f)
-    (if (and (.exists f) (< (- (now-ms) (.lastModified f)) lease-stale-ms))
+    (if (and (io/exists? f) (< (- (now-ms) (io/last-modified f)) lease-stale-ms))
       false
       (do (spit f (str (now-ms))) true))))
 
-(defn release-lease! [] (.delete (io/file lease-path)))
+(defn release-lease! [] (io/delete (io/file lease-path)))
 
 ;; ── state ─────────────────────────────────────────────────────────────────
 
@@ -58,7 +58,7 @@
 
 (defn load-state []
   (let [f (io/file state-path)]
-    (if (.exists f) (edn/read-string (slurp f)) empty-state)))
+    (if (io/exists? f) (edn/read-string (slurp f)) empty-state)))
 
 (defn save-state! [s] (io/make-parents state-path) (spit state-path (pr-str s)) s)
 
