@@ -1,5 +1,5 @@
 (ns illust.cosci-test
-  (:require [clojure.test :refer [deftest testing is]]
+  (:require [kotoba.test :refer [deftest testing is]]
             [illust.cosci :as cosci]))
 
 (defn- result [id status & {:keys [format bytes safety] :or {format "png" bytes (byte-array [1]) safety false}}]
