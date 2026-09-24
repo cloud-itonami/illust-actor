@@ -6,7 +6,7 @@
              default 8 gen jobs/day, governs how many rounds actually submit)
     status — print the ledger tail + current loop state"
   (:require [illust.loop :as loop]
-            [clojure.pprint :as pprint])
+            [kotoba.pprint :as pprint])
   (:gen-class))
 
 (defn -main [& [cmd]]
