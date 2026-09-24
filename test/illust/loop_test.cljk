@@ -3,7 +3,7 @@
   calls are all faked via with-redefs, and lease/state/ledger paths are
   redirected into a temp dir so the test never touches this repo's own
   .illust/ledger/assets state."
-  (:require [clojure.test :refer [deftest testing is]]
+  (:require [kotoba.test :refer [deftest testing is]]
             [clojure.java.shell :as shell]
             [illust.loop :as loop]
             [illust.murakumo :as murakumo]
