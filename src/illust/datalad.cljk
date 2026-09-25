@@ -7,7 +7,7 @@
   Rejected/losing candidates are NEVER written here — only the ledger
   records them (illust.ledger) — so B2 isn't paid-for-and-polluted with
   disqualified generations."
-  (:require [clojure.java.io :as io]
+  (:require [kotoba.io :as io]
             [clojure.java.shell :as shell]))
 
 (def ^:dynamic *assets-dir*
