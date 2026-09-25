@@ -4,7 +4,7 @@
   file together ARE the immutable audit trail (ADR-2607123000 §3); no
   Datomic/langchain.db indirection needed for a single-writer file-per-actor
   ledger."
-  (:require [clojure.java.io :as io]
+  (:require [kotoba.io :as io]
             [clojure.edn :as edn])
   (:import [java.time Instant]))
 
@@ -24,7 +24,7 @@
   ([] (read-all default-path))
   ([path]
    (let [f (io/file path)]
-     (if (.exists f)
+     (if (io/exists? f)
        (with-open [r (io/reader f)]
          (mapv edn/read-string (doall (line-seq r))))
        []))))
